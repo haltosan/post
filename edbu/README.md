@@ -4,10 +4,11 @@ the webserver and the upload files will curl and compile/run the files. I create
 process of uploading, compiling, running, and crying as each script fails (jk). This speeds up the process.
 It also allows other scripts to be uploaded and ran, so it isn't limited to exploit database exploits.
 
-## Purpose and usage
+## Prerequisites
 This is built to work in a pentest of most unix devices. The host system I use is kali linux, but any machine with SimpleHTTPServer 
 (python) installed should work. The upload file pulls from a server running this way, so modification will have to happen (port) to 
 get it working its best.
+In addition, the 'upload' file used wget, so this needs to be on the remote system (curl can be used instead)
 
 ## Instructions
 
