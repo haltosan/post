@@ -11,22 +11,22 @@ get it working its best.
 
 **Local**
 Run the local file
-'''
+```
 bash local.sh
-'''
+```
 **Remote**
 Upload the 'upload' file to /tmp. I'll give the example of using a webserver
-'''
+```
 wget *ip*:*port*/*file* > /tmp/upload.py
-'''
+```
 Example
-'''
+```
 wget 192.168.1.6:8000/upload.py > /tmp/upload.py
-'''
+```
 The upload.py file will already be hosted on the server to start with, so this method should be simple.
 The rest of the program should be fairly simple to use after running
-'''
+```
 cd /tmp
 python3 upload.py
-'''
+```
 The program may work in python 2, but the functionality is not as good as I would like it to be. Please use python 3.
