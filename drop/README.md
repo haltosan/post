@@ -20,3 +20,10 @@ Example:
 bash rev.sh IP PORT
 ```
 
+*bind.sh*
+
+Attempts to make a bind shell using multiple methos
+Example:
+```
+bash bind.sh PORT
+```
