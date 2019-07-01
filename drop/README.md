@@ -12,3 +12,11 @@ Example:
 bash user.sh USERNAME PASSWORD
 ```
 
+*rev.sh*
+
+Attempts to make a reverse shell using multiple methods
+Example:
+```
+bash rev.sh IP PORT
+```
+
