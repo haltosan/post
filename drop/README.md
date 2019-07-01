@@ -14,7 +14,7 @@ bash user.sh USERNAME PASSWORD
 
 *rev.sh*
 
-Attempts to make a reverse shell using multiple methods
+Attempts to make a reverse shell using multiple methods.
 Example:
 ```
 bash rev.sh IP PORT
@@ -22,7 +22,7 @@ bash rev.sh IP PORT
 
 *bind.sh*
 
-Attempts to make a bind shell using multiple methos
+Attempts to make a bind shell using multiple methods.
 Example:
 ```
 bash bind.sh PORT
