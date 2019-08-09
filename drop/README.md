@@ -41,9 +41,7 @@ bash timebomb.sh "[time]" "[command]"
 ```
 The time needs to be entered in the following crontab format:
 
- min  hour  dayOfMonth  monthOfYear  dayOfWeek
- 
-0-59  0-23    1-31         1-12       0-6 (sunday=0)
+min(0-59) hour(0-23) dayOfMonth(1-31) monthOfYear(1-12) dayOfWeek(0-6 sunday=0)
 
 Leave '\*' to have it wildcard
 
