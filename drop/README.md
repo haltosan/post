@@ -40,8 +40,15 @@ Example:
 bash timebomb.sh "[time]" "[command]"
 ```
 The time needs to be entered in the following crontab format:
+
  min hour dayOfMonth monthOfYear dayOfWeek
+ 
 0-59 0-23    1-31       1-12      0-6 (sunday=0)
-leave '\*' to have it wildcard
-example: 3 12 20 9 \*
-this will run at 12:03am on every sept 20
+
+Leave '\*' to have it wildcard
+
+Example: 3 12 20 9 \*
+
+This will run at 12:03am on every sept 20
+
+Also, the parameters need to be enclosed in quotes
